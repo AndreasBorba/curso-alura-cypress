@@ -9,6 +9,7 @@
   "author": "Andreas Borba",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^9.6.1",
+    "mochawesome": "^7.1.3"
   }
 }
