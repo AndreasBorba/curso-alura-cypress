@@ -8,7 +8,8 @@
     "charts": true,
     "code": true,
     "title": "Automação e2e com Cypress",
-    "timestamp": "mmddyyyy_HHMMss"
+    "timestamp": "mmddyyyy_HHMMss",
+    "logs": false
   },
   "projectId": "trtja9"
 }
