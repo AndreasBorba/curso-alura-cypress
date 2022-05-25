@@ -1,1 +1,16 @@
-{}
+{
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/report/mochawesome-report",
+    "overwrite": true,
+    "html": true,
+    "json": false,
+    "charts": true,
+    "code": true,
+    "title": "Automação e2e com Cypress",
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "projectId": "trtja9"
+}
+
+
