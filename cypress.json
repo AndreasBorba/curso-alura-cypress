@@ -11,7 +11,8 @@
     "timestamp": "mmddyyyy_HHMMss",
     "logs": false
   },
-  "projectId": "trtja9"
+  "projectId": "trtja9",
+  "baseUrl": "https://alura-fotos.herokuapp.com"
 }
 
 

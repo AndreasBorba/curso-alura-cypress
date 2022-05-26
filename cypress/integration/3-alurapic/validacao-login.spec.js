@@ -2,12 +2,19 @@
 describe('Login e registro de usuario Alurapic', () => {
     
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com');
+        cy.visit('/');
+        /* Criando um stub para LOGIN inválido
+        cy.intercept('POST', 'https://apialurapic.herokuapp.com/user/login', {
+            statusCode: 400,
+        }).as('stubPost')
+        */
        
     })
 
     it('fazer login de um usuário válido', () => {
-        cy.login('flavio', '123');
+        cy.login(Cypress.env('userName'), Cypress.env('password'));
+        // Aplicando o stub através da função wait
+        // cy.wait('@stubPost')
         cy.contains('a', '(Logout)').should('be.visible');
     })
 
