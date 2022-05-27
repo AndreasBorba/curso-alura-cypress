@@ -23,6 +23,7 @@ describe('Login e registro de usuario Alurapic', () => {
         // cy.get('p > a').click();
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
+        cy.wait(5000); // Diz para aguardar 5 segundos
         cy.contains('ap-vmessage', 'Email is required!').should('be.visible');
         cy.contains('button', 'Register').click();
         cy.contains('ap-vmessage', 'Full name is required!').should('be.visible');
